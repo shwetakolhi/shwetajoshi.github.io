@@ -17,10 +17,44 @@
     </nav>
   </header>
 
-  <section>
-    <h2>Welcome</h2>
-    <p>I help pharma organizations unlock the power of real-world evidence through data-driven patient analytics.</p>
-  </section>
+  <main>
+    <section>
+      <h2>Welcome</h2>
+      <p>I help pharma organizations unlock the power of real-world evidence through data-driven patient analytics.</p>
+    </section>
+
+    <section>
+      <h2>Share Your Code Use Case</h2>
+      <p class="helper-text">Provide a quick description and link to the GitHub repository you want to showcase.</p>
+      <form>
+        <div>
+          <label for="title">Title</label>
+          <input type="text" id="title" name="title" placeholder="e.g., RWE cohort builder" required>
+        </div>
+
+        <div>
+          <label for="description">Description</label>
+          <textarea id="description" name="description" placeholder="Briefly describe what your code does." required></textarea>
+        </div>
+
+        <div>
+          <label for="github">GitHub Repository</label>
+          <select id="github" name="github" required>
+            <option value="">Select a repo…</option>
+            <option>shwetajoshi/patient-analytics-playbook</option>
+            <option>shwetajoshi/rwe-insights</option>
+            <option>shwetajoshi/clinical-data-tools</option>
+          </select>
+          <p class="helper-text">Choose the repository that holds the code you want to reference.</p>
+        </div>
+
+        <div>
+          <button type="submit">Submit</button>
+          <p class="status-message">This is a static demo—wire it up to your backend or GitHub API as needed.</p>
+        </div>
+      </form>
+    </section>
+  </main>
 
   <footer>
     <p>&copy; 2025 Shweta Joshi | <a href="https://www.linkedin.com">LinkedIn</a></p>
